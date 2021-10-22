@@ -11,7 +11,9 @@ const Header = () => {
 
 const styles = StyleSheet.create({
     logo: {
-        color: 'white'
+        color: 'white',
+        width: 100,
+        height: 50,
     }
 });
 
