@@ -1,19 +1,29 @@
 import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import { Text, View, TouchableOpacity, StyleSheet } from 'react-native';
 
 const Header = () => {
     return (
-        <View>
-            <Text style={styles.logo}>SMedia</Text>
+        <View style={styles.container}>
+            <TouchableOpacity>
+                <Text style={styles.title}>SMedia</Text>
+            </TouchableOpacity>
         </View>
     );
 };
 
 const styles = StyleSheet.create({
-    logo: {
+    container: {
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        flexDirection: 'row',
+        marginHorizontal: 20,
+        marginTop: 18
+    },
+    title: {
         color: 'white',
         width: 100,
         height: 50,
+        fontSize: 25
     }
 });
 
